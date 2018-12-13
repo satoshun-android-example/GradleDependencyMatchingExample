@@ -1,1 +1,1 @@
-# NameSpacing RClass example
+# Matching repositories to dependencies

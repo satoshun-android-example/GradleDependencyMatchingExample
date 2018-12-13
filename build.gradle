@@ -12,14 +12,26 @@ buildscript {
 
 allprojects {
   repositories {
+//    google().mavenContent {
+//      includeGroup "androidx\\..*"
+//    }
+
     google()
-    jcenter()
+    mavenCentral()
+
+    jcenter().mavenContent {
+      includeGroup "org.jetbrains.kotlin"
+      includeGroup "org.jetbrains.kotlinx"
+      includeGroup "com.google.dagger"
+      includeGroup "org.jetbrains"
+      includeGroup "javax.inject"
+    }
+
     maven {
       url "https://storage.googleapis.com/cloudflare-maven/public/"
-//      content {
-//        includeGroup "com.cloudflare"
-//        includeGroup "my.company"
-//      }
+      content {
+        includeGroup "com.cloudflare"
+      }
 //      content {
 //        excludeGroupByRegex "com\\.cloudflare"
 //      }
