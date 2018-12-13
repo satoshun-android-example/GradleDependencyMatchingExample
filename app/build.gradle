@@ -65,4 +65,6 @@ dependencies {
   kapt Libs.dagger_processor
   implementation Libs.dagger_android
   kapt Libs.dagger_android_processor
+
+  implementation "com.cloudflare:cloudflare-mobile-sdk:2.1.0@aar"
 }
