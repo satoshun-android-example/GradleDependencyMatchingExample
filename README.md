@@ -1,0 +1,1 @@
+# NameSpacing RClass example
