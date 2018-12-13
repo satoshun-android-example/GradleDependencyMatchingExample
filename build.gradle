@@ -14,7 +14,16 @@ allprojects {
   repositories {
     google()
     jcenter()
-    maven { url "https://storage.googleapis.com/cloudflare-maven/public/" }
+    maven {
+      url "https://storage.googleapis.com/cloudflare-maven/public/"
+//      content {
+//        includeGroup "com.cloudflare"
+//        includeGroup "my.company"
+//      }
+//      content {
+//        excludeGroupByRegex "com\\.cloudflare"
+//      }
+    }
   }
 }
 
